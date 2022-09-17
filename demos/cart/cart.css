@@ -1,0 +1,31 @@
+svg {
+  height: auto;
+  width: 100%;
+  max-width: 100px;
+}
+
+/* Addon styles */
+
+.cart {
+  display: inline-block;
+  position: relative;
+
+  margin-left: 20px;
+}
+
+.addon {
+  position: absolute;
+  right: -10px;
+  bottom: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 30px;
+  width: 30px;
+
+  background-color: red;
+  border-radius: 50%;
+
+  line-height: 1;
+}

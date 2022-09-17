@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  padding: 10px 0;
+  overflow-x: auto;
+}
+
+li {
+  margin: 0 10px;
+  display: block;
+  white-space: nowrap;
+}

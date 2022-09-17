@@ -1,0 +1,43 @@
+ul {
+  padding: 0;
+
+  text-align: center;
+}
+
+li {
+  border: 1px #000 solid;
+}
+
+li:first-of-type {
+  background-color: aqua;
+}
+
+/* Dropdown styles */
+ul {
+  overflow: hidden;
+
+  height: calc(22px * 6);
+
+  transition: height linear 0.5s;
+}
+
+ul:has(input:checked) {
+  height: 22px;
+}
+
+li {
+  position: relative;
+}
+
+input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 100%;
+  margin: 0;
+
+  opacity: 0;
+  cursor: pointer;
+}
