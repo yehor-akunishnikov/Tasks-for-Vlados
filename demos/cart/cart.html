@@ -10,7 +10,7 @@
   </head>
   <body>
     <form oninput="result.value=b.value">
-      <div class="cart">
+      <div class="cart" id="cart">
         <svg
           version="1.1"
           id="Layer_1"
@@ -77,5 +77,25 @@
         <input type="range" id="b" name="b" value="50" />
       </div>
     </form>
+    <input
+      type="range"
+      id="cart-size"
+      name="a"
+      step="0.2"
+      value="3"
+      min="0.6"
+      max="5"
+    />
+
+    <script defer>
+      document.addEventListener('DOMContentLoaded', () => {
+        const input = document.querySelector('#cart-size');
+        const cart = document.querySelector('#cart');
+
+        input.addEventListener('change', (e) => {
+          cart.style['font-size'] = `${e.currentTarget.value}rem`;
+        });
+      });
+    </script>
   </body>
 </html>

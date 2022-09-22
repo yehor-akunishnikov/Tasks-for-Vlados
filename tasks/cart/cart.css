@@ -1,7 +1,13 @@
 svg {
   height: auto;
   width: 100%;
-  max-width: 100px;
+}
+
+#cart-size {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* Addon styles */

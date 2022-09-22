@@ -1,28 +1,41 @@
 svg {
   height: auto;
   width: 100%;
-  max-width: 100px;
+}
+
+#cart-size {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
 }
 
 /* Addon styles */
-
 .cart {
   display: inline-block;
   position: relative;
 
-  margin-left: 20px;
+  font-size: 3rem;
+}
+
+svg {
+  max-width: 4em;
+
+  font-size: 1em;
 }
 
 .addon {
   position: absolute;
-  right: -10px;
-  bottom: 0px;
+  right: -0.7em;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  height: 30px;
-  width: 30px;
+  height: 1.8em;
+  width: 1.8em;
+
+  font-size: 1em;
 
   background-color: red;
   border-radius: 50%;
